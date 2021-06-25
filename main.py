@@ -13,3 +13,5 @@ cv2.rectangle(img,(0,0),(300,40),(255,255,255),-1)
 cv2.putText(img,"Number of faces detected"+str(faces.shape[0]),(0,25),cv2.FONT_HERSHEY_TRIPLEX,0.5,(0,0,0),1)
 
 cv2.imshow("Counting faces",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
