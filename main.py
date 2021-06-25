@@ -10,3 +10,4 @@ for (x,y,w,h) in faces:
     cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),3)
 	
 cv2.rectangle(img,(0,0),(300,40),(255,255,255),-1)
+cv2.putText(img,"Number of faces detected"+str(faces.shape[0]),(0,25),cv2.FONT_HERSHEY_TRIPLEX,0.5,(0,0,0),1)
